@@ -1,0 +1,20 @@
+<h1>Markets</h1>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>City</th>
+      <th>State</th>
+      <th>More Info</th>
+    </tr>
+    <% @markets.each do |market| %>
+      <tr>
+        <div id="market-<%= market.id%>">
+          <td><%= market.name %></td>
+          <td><%= market.city %></td>
+          <td><%= market.state %></td>
+          <td><%= button_to 'More Info', "/markets/#{market.id}", method: :get %></td>
+        </div>
+      </tr>
+    <% end %>
+  </table>
