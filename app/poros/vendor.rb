@@ -14,4 +14,8 @@ class Vendor
     @credit_accepted = data[:attributes][:credit_accepted]
     @description = data[:attributes][:description]
   end
+
+  def credit
+    @credit_accepted ? 'Yes' : 'No'
+  end
 end

@@ -1,7 +1,7 @@
 require 'rails_helper' # rubocop:disable Style/FrozenStringLiteralComment
 
 RSpec.describe '/market' do
-  describe 'as a visitor' do
+  describe 'as a visitor', :vcr do
     describe 'when I visit /markets' do
       it 'shows the list of markets name, city, state and button for more info' do
         visit '/markets'
