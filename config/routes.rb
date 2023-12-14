@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   resources :markets, only: %i[index show]
+  resources :vendors, only: :show
 end

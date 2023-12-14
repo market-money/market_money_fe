@@ -11,6 +11,12 @@ class MarketsController < ApplicationController # rubocop:disable Style/FrozenSt
   def show
     conn = Faraday.new(url: 'http://localhost:3000')
     response = conn.get("/api/v0/markets/#{params[:id]}")
-    @market = JSON.parse(response.body, symbolize_names: true)
+    json = JSON.parse(response.body, symbolize_names: true)[:data]
+    vendor_response = conn.get("/api/v0/markets/#{params[:id]}/vendors")
+    vendor_json = JSON.parse(vendor_response.body, symbolize_names: true)
+    @market = Market.new(json)
+    @vendors = vendor_json[:data].map do |vendor_data|
+      Vendor.new(vendor_data)
+    end
   end
 end
