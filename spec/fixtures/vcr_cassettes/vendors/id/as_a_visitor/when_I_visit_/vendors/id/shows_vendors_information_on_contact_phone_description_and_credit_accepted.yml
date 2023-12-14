@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/vendors/56282
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"3c051ad0c2b31e60cb6647ccdb725034"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 93401501-1d1b-4d6b-b127-127aed09e0fb
+      X-Runtime:
+      - '0.004986'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=0.52, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=1.13
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"56282","type":"vendor","attributes":{"name":"Bookish
+        Bazaar","description":"A vibrant and colorful stall offering a diverse selection
+        of books from around the world, as well as handmade bookmarks and reading
+        accessories.","contact_name":"Kanesha Rippin","contact_phone":"1-223-658-3770","credit_accepted":true}}}'
+  recorded_at: Thu, 14 Dec 2023 22:42:21 GMT
+recorded_with: VCR 6.2.0

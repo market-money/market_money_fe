@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe '/market/id' do
   describe 'as a visitor' do
-    describe 'when I visit /markets/id' do
+    describe 'when I visit /markets/id', :vcr do
       it 'shows the list of market name, address and list of vendors' do
         visit '/markets/322482'
 

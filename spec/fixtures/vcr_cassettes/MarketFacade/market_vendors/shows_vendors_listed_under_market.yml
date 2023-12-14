@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/markets/331074/vendors
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"7c2947ffee73ef463a1949cc33d21096"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b68c8958-e128-4c0b-b40d-4e2d996cac0c
+      X-Runtime:
+      - '0.007886'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=2.05, instantiation.active_record;dur=0.09,
+        process_action.action_controller;dur=3.56
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"55202","type":"vendor","attributes":{"name":"The Pickle
+        People","description":"Homemade pickles and relishes","contact_name":"Arthur
+        Lubowitz IV","contact_phone":"923.035.4918","credit_accepted":false}},{"id":"56281","type":"vendor","attributes":{"name":"Page
+        Turner''s Emporium","description":"An eclectic selection of books, from classic
+        literature to contemporary fiction, with a focus on thought-provoking and
+        engaging reads.","contact_name":"Dr. Gemma Gleason","contact_phone":"1-449-489-7169","credit_accepted":false}},{"id":"56326","type":"vendor","attributes":{"name":"Nibble
+        Nook","description":"A selection of small but mighty snacks that pack a big
+        punch of flavor.","contact_name":"Georgeanna Corwin","contact_phone":"425.961.3148","credit_accepted":true}},{"id":"54904","type":"vendor","attributes":{"name":"The
+        Gourmet Pop-up","description":"This vendor changes its menu weekly and offers
+        a variety of gourmet dishes made with locally sourced ingredients.","contact_name":"Nana
+        Hegmann","contact_phone":"(155) 283-9997","credit_accepted":false}},{"id":"55473","type":"vendor","attributes":{"name":"Choco-Chewy","description":"Chewy
+        and chocolatey treats that are a must-have","contact_name":"Mr. Tawna Schoen","contact_phone":"914.961.9560","credit_accepted":false}},{"id":"55149","type":"vendor","attributes":{"name":"Leafy
+        Greens","description":"sells a variety of leafy greens and salad mixes","contact_name":"Tari
+        Ledner","contact_phone":"1-129-873-5578","credit_accepted":true}},{"id":"56531","type":"vendor","attributes":{"name":"Radiant
+        Reflections","description":"Abstract paintings with a reflective and luminous
+        quality","contact_name":"Alejandro Steuber Sr.","contact_phone":"(243) 830-4241","credit_accepted":true}},{"id":"56456","type":"vendor","attributes":{"name":"Poppy''s
+        Pops","description":"A fun and colorful vendor with creative flavors like
+        cotton candy and blue raspberry.","contact_name":"Prof. Morgan Lind","contact_phone":"1-907-394-8352","credit_accepted":false}},{"id":"55869","type":"vendor","attributes":{"name":"The
+        Paper Palace","description":"Handmade paper goods, including cards, journals,
+        and more.","contact_name":"Ms. Lazaro Rosenbaum","contact_phone":"1-740-151-4587","credit_accepted":true}},{"id":"56374","type":"vendor","attributes":{"name":"The
+        Relish House","description":"Artisanal relishes with unique flavor combinations.","contact_name":"Diego
+        Bogan","contact_phone":"195-136-3277","credit_accepted":false}},{"id":"55717","type":"vendor","attributes":{"name":"The
+        Quilt Shop","description":"Handmade quilts and blankets with unique designs
+        and fabrics.","contact_name":"Craig Mitchell","contact_phone":"108.798.3620","credit_accepted":true}},{"id":"56219","type":"vendor","attributes":{"name":"The
+        Beer Baron","description":"Craft beer and ale vendor, with a rotating selection
+        of local and regional brews","contact_name":"Lovetta Lubowitz","contact_phone":"394-203-8505","credit_accepted":false}},{"id":"55394","type":"vendor","attributes":{"name":"The
+        Chipper","description":"Homemade potato chips and dip","contact_name":"Valrie
+        Dickens","contact_phone":"1-638-142-3625","credit_accepted":true}}]}'
+  recorded_at: Thu, 14 Dec 2023 22:42:19 GMT
+recorded_with: VCR 6.2.0

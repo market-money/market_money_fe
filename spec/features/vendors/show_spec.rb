@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe '/vendors/id' do
   describe 'as a visitor' do
-    describe 'when I visit /vendors/id' do
+    describe 'when I visit /vendors/id', :vcr do
       it 'shows vendors information on contact phone, description and credit accepted' do
         visit '/vendors/56282'
         
