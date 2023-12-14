@@ -8,7 +8,9 @@ RSpec.describe Market do
         {
           name: "14&U Farmers' Market",
           city: 'Washington',
-          state: 'District of Columbia'
+          state: 'District of Columbia',
+          street: '1400 U Street NW',
+          zip: '20009'
         }
     }
 
