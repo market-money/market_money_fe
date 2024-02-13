@@ -3,8 +3,17 @@
 <p><%= @market.address %></p>
 <p><%= @market.city %>, <%= @market.state %> <%= @market.zip %></p>
 
-<h3>Vendors at our Market:</h3>
 
-<% @vendors.each do |vendor| %>
-<%= link_to "#{vendor.name}", "/vendors/#{vendor.id}"  %>
-<% end %>
+<h3>Vendors at our Market:</h3>
+  <table class="table2">
+    <tr>
+      <th>Vendor Name</th>
+      <th>Link to Vendor</th>
+    </tr>
+    <% @vendors.each do |vendor| %>
+    <tr>
+      <td><%= vendor.name %> </td>
+      <td><%= link_to "Link to Vendor", "/vendors/#{vendor.id}"%> </td>
+    </tr>
+  <% end %>
+</table>

@@ -13,3 +13,76 @@
  *= require_tree .
  *= require_self
  */
+
+
+ body {
+  font-family: 'Helvetica', sans-serif; 
+  text-align: center;
+  padding: 0;
+  background-color: #d6fab79a;
+}
+
+h1 {
+  font-size: 36px; 
+  color: #333;
+  margin-top: 50px; 
+}
+
+h2 {
+  font-size: 24px; 
+  color: #333;
+  margin-top: 50px; 
+}
+
+h3 {
+  font-size: 16px; 
+  color: #333;
+  margin-top: 50px; 
+}
+
+
+table {
+  margin-left: 450px;
+  border-collapse: collapse;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+table tr:nth-child(odd){background-color: #b7b7b7a2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #ffc886;
+  color: rgb(1, 1, 1);
+}
+
+.table2 {
+  margin-left: 42%;
+  border-collapse: collapse;
+}
+
+.table2 td, .table2 th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table2 tr:nth-child(even){background-color: #f2f2f2;}
+.table2 tr:nth-child(odd){background-color: #b7b7b7a2;}
+
+.table2 tr:hover {background-color: #ddd;}
+
+.table2 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #ffc886;
+  color: rgb(1, 1, 1);
+}
